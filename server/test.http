@@ -1,0 +1,43 @@
+
+GET http://localhost:3000/user/8076368866e13f54 HTTP/1.1
+
+###
+GET http://localhost:3000/user/ HTTP/1.1
+
+###
+
+POST  http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+  "email": "1nisim101@gmail.com",
+  "firstName": "nisim-",
+  "lastName": "ben-shmuel1",
+  "profilePicture":"https://i.stack.imgur.com/Bb6z1.jpg?s=64&g=1",
+  "birthday":"1980-01-01"
+}
+
+###
+
+PATCH http://localhost:3000/user/8076368866e13f54 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "eli"
+}
+
+###
+
+DELETE http://localhost:3000/user/63f7a45f71c1b0b2 HTTP/1.1
+
+###
+POST  http://localhost:3000/post HTTP/1.1
+content-type: application/json
+
+{
+"text":"dsfdsfsdf",
+"userId":"",
+"mediaUrl":"sssss",
+"mediaDate":"1980-01-01"
+
+}
